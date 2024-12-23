@@ -1,0 +1,33 @@
+The HISTORY of .txt
+
+The history of the .txt file format, which is used to store plain text data, dates back to the early days of computing. Here's a brief overview:
+
+1. Origins of Plain Text Files
+In the 1960s and 1970s, early computers primarily used text-based data for communication. The first computers relied on punched cards or paper tape to store data, but the idea of storing plain text files was emerging.
+The concept of plain text is based on characters and symbols that are encoded in a standardized way. Unlike formatted text (e.g., .docx or .rtf), plain text files contain no formatting, fonts, or images—just raw characters.
+
+2. ASCII and Early Text Encoding
+The ASCII (American Standard Code for Information Interchange) encoding system, developed in the early 1960s, became the foundation for representing text in computers. ASCII assigns a unique number to each character (e.g., 65 for "A", 66 for "B").
+Text files were used to store information in this ASCII format, and they were commonly named with the .txt extension.
+
+3. Development of File Extensions
+As computer systems became more advanced, different types of files began to have specific extensions. For example, Microsoft Word documents were saved with the .doc extension, and text files commonly used .txt.
+The .txt extension signified that the file contained only plain text and could be read or edited in any basic text editor (e.g., Notepad, vi, or Emacs).
+
+4. UNIX and Linux Systems
+On UNIX and later Linux systems, the .txt extension wasn't always required, since plain text files could be read without it. However, it remained a common convention to indicate plain text.
+In these systems, plain text was the primary format for configuration files, log files, and scripts.
+
+5. Text Files in Modern Computing
+The .txt format has remained one of the simplest and most widely used formats for text storage, offering portability across different operating systems and applications.
+Modern text editors like Sublime Text, Visual Studio Code, and others, can read and edit .txt files, and they have become the go-to option for storing information in a human-readable format.
+
+6. Unicode and Other Encodings
+In the 1990s, Unicode was introduced as a more universal character encoding system that could support many languages and symbols beyond ASCII. Files with the .txt extension could now use various encodings, like UTF-8, which allowed for a wider range of characters and international support.
+Today, .txt files can store content in a variety of encodings, making them even more versatile in a globalized world.
+
+7. Text Files in the Age of the Web
+On the internet, .txt files are commonly used for storing and sharing configurations, documentation (e.g., README files), and scripts (e.g., shell scripts, Python scripts).
+Although the web is dominated by more complex formats (HTML, PDF, DOCX), .txt remains an essential format for simple, readable content and data exchange.
+
+Finish.
