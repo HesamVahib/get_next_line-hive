@@ -6,7 +6,7 @@
 /*   By: hvahib <hvahib@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 20:14:03 by hvahib            #+#    #+#             */
-/*   Updated: 2024/12/23 20:24:30 by hvahib           ###   ########.fr       */
+/*   Updated: 2024/12/25 18:29:42 by hvahib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*init_buffer(void)
 	return (buffer);
 }
 
-char	*ft_next(char *buffer)
+char	*next_line(char *buffer)
 {
 	int		i;
 	int		j;
@@ -46,7 +46,7 @@ char	*ft_next(char *buffer)
 	return (next_line);
 }
 
-char	*ft_line(char *buffer)
+char	*curr_line(char *buffer)
 {
 	char	*line;
 	int		i;
@@ -107,7 +107,7 @@ char	*get_next_line(int fd)
 	static char	*buffer;
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, buffer, 0) < 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	buffer = read_file(fd, buffer);
 	if (!buffer || *buffer == '\0')
@@ -116,7 +116,7 @@ char	*get_next_line(int fd)
 		buffer = NULL;
 		return (NULL);
 	}
-	line = ft_line(buffer);
-	buffer = ft_next(buffer);
+	line = curr_line(buffer);
+	buffer = next_line(buffer);
 	return (line);
 }
