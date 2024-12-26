@@ -6,7 +6,7 @@
 /*   By: hvahib <hvahib@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 20:14:03 by hvahib            #+#    #+#             */
-/*   Updated: 2024/12/25 18:29:42 by hvahib           ###   ########.fr       */
+/*   Updated: 2024/12/26 18:34:07 by hvahib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,7 @@ char	*curr_line(char *buffer)
 	int		i;
 
 	if (*buffer == '\0')
-	{
-		free(buffer);
-		return (NULL);
-	}
+		return (free(buffer), NULL);
 	i = 0;
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
